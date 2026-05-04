@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/auth", require("./routes/auth.routes"));
 app.use("/post", require("./routes/post.routes"));
 
-// ✅ 3. connexion MongoDB et démarrage
+// ✅ 3. connexion MongoDB et démarrage du projet
 connectDB().then(() => {
     app.listen(port, () => console.log("le server a demarré au port " + port));
 });
