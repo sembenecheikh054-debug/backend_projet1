@@ -1,4 +1,6 @@
-require("dotenv").config({ path: "../.env" });
+// ✅ dotenv simple — lit les variables d'environnement Render
+require("dotenv").config();
+
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db");
